@@ -32,6 +32,7 @@ def plot_pca_analysis(analysis_result, out):
 
     for ax, (i, df) in zip(axes, analysis_result.groupby('W id')):
         ax.bar(x=df['component vector id']+1, height=np.abs(df['dot']), color=[249./255, 72./255, 117./255])
+        ax.set_xlabel('principal component vector id')
         ax.set_title('W index: {}'.format(i+1))
 
     fig.savefig(str(out.joinpath('analysis_result.pdf')))
