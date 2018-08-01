@@ -5,7 +5,7 @@
 ```bash
 python autoencoder/run.py --do train --model_dir result
 ```
-### how to analysis a trained sample model based on a PCA
+### how to analyze a trained sample model based on a PCA
 ```bash
 python autoencoder/run.py --do analysis --model_dir result
 ```  
